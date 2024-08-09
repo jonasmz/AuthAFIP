@@ -1,6 +1,6 @@
 import { aliasTo, AwilixContainer, createContainer, InjectionMode } from "awilix";
-import { diContainer } from "./interfaces/diContainer.interface";
-import { injectionModes } from './interfaces/injectionModes.enum';
+import { diContainer } from "./abstractions/diContainer.interface";
+import { injectionModes } from './abstractions/injectionModes.enum';
 
 export class AwilixDIContainer implements diContainer{
     private readonly _container: AwilixContainer;

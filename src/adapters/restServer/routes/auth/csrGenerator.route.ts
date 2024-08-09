@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { diContainer } from "../../../diContainer/interfaces/diContainer.interface";
+import { diContainer } from "../../../diContainer/abstractions/diContainer.interface";
 import { CsrGeneratorController } from "../../../../application/controllers/csrGenerator.controller";
 
 export const csrGeneratorRouter = (container: diContainer): Router => {

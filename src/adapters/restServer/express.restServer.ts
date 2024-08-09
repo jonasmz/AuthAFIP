@@ -1,9 +1,9 @@
 import express, { Application } from 'express';
 
-import { restServer } from './interfaces/restServer.interface';
-import { serverConfig } from './interfaces/serverConfig.type';
+import { restServer } from './abstractions/restServer.interface';
+import { serverConfig } from './abstractions/serverConfig.type';
 import { csrGeneratorRouter } from './routes/auth/csrGenerator.route';
-import { diContainer } from '../diContainer/interfaces/diContainer.interface';
+import { diContainer } from '../diContainer/abstractions/diContainer.interface';
 
 export class ExpressRestServer implements restServer{
     private readonly _serverApp: Application;

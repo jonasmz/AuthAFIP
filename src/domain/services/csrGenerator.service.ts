@@ -1,7 +1,7 @@
 import forge from 'node-forge';
 import { csrResponseDto } from "../dtos/csrGenerator/csrResponse.dto";
 import { CsrSubjectEntity } from "../entities/csrGenerator/csrSubject.entity";
-import { csrGeneratorService } from "../interfaces/csrGenerator/csrGeneratorService.interface";
+import { csrGeneratorService } from "../abstractions/csrGenerator/csrGeneratorService.interface";
 
 export class CsrGeneratorService implements csrGeneratorService{
     

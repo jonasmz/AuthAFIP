@@ -1,6 +1,6 @@
 import { csrSubjectDto } from '../../domain/dtos/csrGenerator/csrSubject.dto';
-import { csrGeneratorInputPort } from '../../domain/interfaces/csrGenerator/csrGeneratorInputPort.interface';
-import { csrGeneratorOutputPort } from '../../domain/interfaces/csrGenerator/csrGeneratorOutputPort.interface';
+import { csrGeneratorInputPort } from '../../domain/abstractions/csrGenerator/csrGeneratorInputPort.interface';
+import { csrGeneratorOutputPort } from '../../domain/abstractions/csrGenerator/csrGeneratorOutputPort.interface';
 
 export class CsrGeneratorController{
     private readonly _inputPort: csrGeneratorInputPort;

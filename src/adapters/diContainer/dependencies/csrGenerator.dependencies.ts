@@ -1,5 +1,5 @@
 import { asClass, asValue } from "awilix";
-import { diContainer } from "../interfaces/diContainer.interface";
+import { diContainer } from "../abstractions/diContainer.interface";
 import { CsrGeneratorService } from "../../../domain/services/csrGenerator.service";
 import { CsrGeneratorModel } from "../../../domain/models/csrGenerator.model";
 import { CsrGeneratorJsonPresenter } from "../../../application/presenters/csrGenerator/csrGenerator.json.presenter";

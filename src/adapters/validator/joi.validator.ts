@@ -1,6 +1,6 @@
 import { Schema } from 'joi';
-import { Validator } from '../../domain/interfaces/validator/validator.interface';
-import { ValidationResult } from '../../domain/interfaces/validator/validationResult.interface';
+import { Validator } from '../../domain/abstractions/validator/validator.interface';
+import { ValidationResult } from '../../domain/abstractions/validator/validationResult.interface';
 export class JoiValidator<T> implements Validator<T>{
     private readonly _schema: Schema;
 

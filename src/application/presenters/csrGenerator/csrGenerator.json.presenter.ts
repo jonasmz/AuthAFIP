@@ -1,5 +1,5 @@
 import { csrResponseDto } from "../../../domain/dtos/csrGenerator/csrResponse.dto";
-import { csrGeneratorOutputPort } from "../../../domain/interfaces/csrGenerator/csrGeneratorOutputPort.interface";
+import { csrGeneratorOutputPort } from "../../../domain/abstractions/csrGenerator/csrGeneratorOutputPort.interface";
 
 export class CsrGeneratorJsonPresenter implements csrGeneratorOutputPort{
     protected _jsonResponse: any | null = null;

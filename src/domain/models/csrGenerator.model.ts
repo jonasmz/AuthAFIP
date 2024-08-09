@@ -1,10 +1,10 @@
 import { csrResponseDto } from "../dtos/csrGenerator/csrResponse.dto";
 import { csrSubjectDto } from '../dtos/csrGenerator/csrSubject.dto';
 import { CsrSubjectEntity } from '../entities/csrGenerator/csrSubject.entity';
-import { csrGeneratorInputPort } from "../interfaces/csrGenerator/csrGeneratorInputPort.interface";
-import { csrGeneratorOutputPort } from "../interfaces/csrGenerator/csrGeneratorOutputPort.interface";
-import { csrGeneratorService } from '../interfaces/csrGenerator/csrGeneratorService.interface';
-import { Validator } from "../interfaces/validator/validator.interface";
+import { csrGeneratorInputPort } from "../abstractions/csrGenerator/csrGeneratorInputPort.interface";
+import { csrGeneratorOutputPort } from "../abstractions/csrGenerator/csrGeneratorOutputPort.interface";
+import { csrGeneratorService } from '../abstractions/csrGenerator/csrGeneratorService.interface';
+import { Validator } from "../abstractions/validator/validator.interface";
 
 export class CsrGeneratorModel implements csrGeneratorInputPort{
     private readonly _csrGeneratorService: csrGeneratorService;
